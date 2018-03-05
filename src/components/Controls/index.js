@@ -25,7 +25,11 @@ export default class extends Component {
             console.log(data)
         })
     }
+    getData = () => {
+        return [1,2,3]
+    }
     render() {
+        
         return (
             <div>
                 <RaisedButton
