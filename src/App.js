@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import Main from './components/Main'
+import React from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import Activity from './components/Activity';
+import Controls from './components/Controls';
+
 
 const App = () => (
     <MuiThemeProvider>
-      <Main />
+      {/* <Activity /> */}
+      <Controls />
     </MuiThemeProvider>
 )
 
