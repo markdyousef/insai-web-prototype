@@ -1,47 +1,31 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import {getBoardInfo, startBoardStream, stopBoardStream} from '../../socket';
+import {connect} from 'react-redux';
 
-export default class extends Component {
+class Controls extends Component {
     constructor() {
         super();
         getBoardInfo((err, info) => this.setState({
             info
         }));
     }
-    startStream = () => {
-        startBoardStream((err, data) => {
-            if (err) {
-                console.log(err);
-            }
-            console.log(data)
-        })
-    }
-    stopStream = () => {
-        stopBoardStream((err, data) => {
-            if (err) {
-                console.log(err);
-            }
-            console.log(data)
-        })
-    }
-    getData = () => {
-        return [1,2,3]
-    }
     render() {
-        
+        const {dispatch} = this.props;   
         return (
             <div>
                 <RaisedButton
                     label="Stop"
-                    onClick={this.stopStream}
+                    onClick={stopBoardStream}
                 />
                 <RaisedButton
                     label="Start"
                     primary
-                    onClick={this.startStream}
+                    onClick={() => dispatch(startBoardStream())}
                 />
             </div>
         );
     }
 }
+
+export default connect()(Controls);
