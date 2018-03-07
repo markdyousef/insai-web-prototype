@@ -1,18 +1,21 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Graphs from '../Graphs';
+import Graph from '../Graph';
 import Controls from '../Controls';
 import Config from '../Config';
 
 const Container = styled.section`
-    background: #ddd;
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 const View = styled.div`
     display: flex;
-    padding: 5px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1600px;
+    width: 100%;
 `;
 
 export default class extends Component {
@@ -24,7 +27,7 @@ export default class extends Component {
             <Container>
                 <Controls />
                 <View>
-                    <Graphs />
+                    <Graph />
                     <Config />
                 </View>
             </Container>

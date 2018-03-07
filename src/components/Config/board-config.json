@@ -1,0 +1,209 @@
+{
+    "headset": {
+        "rows": [
+            [
+                {
+                    "areaName": "Fp1",
+                    "cableColor": "BLACK",
+                    "channelColor": "PURPLE",
+                    "channelNumber": 2,
+                    "channelName": "DAISY_N2P"
+                },
+                {
+                    "areaName": "Fp2",
+                    "cableColor": "WHITE",
+                    "channelColor": "GREY",
+                    "channelNumber": 1,
+                    "channelName": "DAISY_N1P"
+                }
+            ],
+            [
+                {
+                    "areaName": "F7",
+                    "cableColor": "BROWN",
+                    "channelColor": "BROWN",
+                    "channelNumber": 8,
+                    "channelName": "CYTON_N8P"
+                },
+                {
+                    "areaName": "F3",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "Fz",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "F4",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "F8",
+                    "cableColor": "GREY",
+                    "channelColor": "GREY",
+                    "channelNumber": 1,
+                    "channelName": "CYTON_N1P"
+                }
+            ],
+            [
+                {
+                    "areaName": "A1",
+                    "cableColor": "BLACK",
+                    "channelColor": "",
+                    "channelNumber": 9,
+                    "channelName": "CYTON_BIAS" 
+                },
+                {
+                    "areaName": "T3",
+                    "cableColor": "RED",
+                    "channelColor": "RED",
+                    "channelNumber": 7,
+                    "channelName": "CYTON_N7P"
+                },
+                {
+                    "areaName": "C3",
+                    "cableColor": "ORANGE",
+                    "channelColor": "ORANGE",
+                    "channelNumber": 6,
+                    "channelName": "CYTON_N6P"
+                },
+                {
+                    "areaName": "Cz",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "C4",
+                    "cableColor": "BLUE",
+                    "channelColor": "BLUE",
+                    "channelNumber": 3,
+                    "channelName": "CYTON_N3P"
+                },
+                {
+                    "areaName": "T4",
+                    "cableColor": "PURPLE",
+                    "channelColor": "PURPLE",
+                    "channelNumber": 2,
+                    "channelName": "CYTON_N2P"
+                },
+                {
+                    "areaName": "A2",
+                    "cableColor": "BLACK",
+                    "channelColor": "",
+                    "channelNumber": 0,
+                    "channelName": "CYTON_SRB"
+                }
+            ],
+            [
+                {
+                    "areaName": "T5",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "P3",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "Pz",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "P4",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                },
+                {
+                    "areaName": "T6",
+                    "cableColor": "",
+                    "channelColor": "",
+                    "channelNumber": -1,
+                    "channelName": ""
+                }
+            ],
+            [
+                {
+                    "areaName": "O1",
+                    "cableColor": "YELLOW",
+                    "channelColor": "YELLOW",
+                    "channelNumber": 5,
+                    "channelName": "CYTON_N5P"
+                },
+                {
+                    "areaName": "O2",
+                    "cableColor": "GREEN",
+                    "channelColor": "GREEN",
+                    "channelNumber": 4,
+                    "channelName": "CYTON_N4P"
+                }
+            ]
+        ]
+    },
+    "handset": {
+        "lower": [
+            {
+                "areaName": "WRIST_RIGHT",
+                "cableColor": "YELLOW",
+                "channelColor": "YELLOW",
+                "channelNumber": 5,
+                "channelName": "DAISY_N5P",
+                "dataType": "EMG"
+            },
+            {
+                "areaName": "FINGERS_RIGHT",
+                "cableColor": "ORANGE",
+                "channelColor": "ORANGE",
+                "channelNumber": 6,
+                "channelName": "DAISY_N6P",
+                "dataType": "EMG"
+            },
+            {
+                "areaName": "PULSE_WRIST_RIGHT",
+                "cableColor": "",
+                "channelColor": "",
+                "channelNumber": -1,
+                "channelName": "",
+                "dataType": "ECG"
+            }
+        ],
+        "upper": [
+            {
+                "areaName": "BICEP_RIGHT",
+                "cableColor": "BLUE",
+                "channelColor": "BLUE",
+                "channelNumber": 3,
+                "channelName": "DAISY_N3P",
+                "dataType": "EMG"
+            },
+            {
+                "areaName": "TRICEP",
+                "cableColor": "GREEN",
+                "channelColor": "GREEN",
+                "channelNumber": 4,
+                "channelName": "DAISY_N4P",
+                "dataType": "EMG"
+            }
+        ]
+    }
+}

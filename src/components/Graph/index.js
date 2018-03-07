@@ -13,9 +13,9 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-const GraphsContainer = connect(
+const GraphContainer = connect(
     mapStateToProps,
     mapDispatchToProps
 )(Graph)
 
-export default GraphsContainer
+export default GraphContainer
