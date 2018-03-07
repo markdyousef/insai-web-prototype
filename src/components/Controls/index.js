@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 import {getBoardInfo, startBoardStream, stopBoardStream} from '../../socket';
 import {connect} from 'react-redux';
+import styled from 'styled-components';
+import IconButton from 'material-ui/IconButton/IconButton';
+import PlayIcon from 'material-ui/svg-icons/av/play-arrow';
+import PauseIcon from 'material-ui/svg-icons/av/pause'
+
+const Container = styled.nav`
+    background: #fff;
+    display: flex;
+    justify-content: center;
+`;
 
 class Controls extends Component {
     constructor() {
@@ -13,17 +22,14 @@ class Controls extends Component {
     render() {
         const {dispatch} = this.props;   
         return (
-            <div>
-                <RaisedButton
-                    label="Stop"
-                    onClick={stopBoardStream}
-                />
-                <RaisedButton
-                    label="Start"
-                    primary
-                    onClick={() => dispatch(startBoardStream())}
-                />
-            </div>
+            <Container>
+                <IconButton touch>
+                    <PlayIcon />
+                </IconButton>
+                <IconButton touch>
+                    <PauseIcon />
+                </IconButton>
+            </Container>
         );
     }
 }

@@ -1,11 +1,21 @@
-/* global Plotly:true */
 import React from 'react';
-import createPlotlyComponent from 'react-plotly.js/factory'
-const Plot = createPlotlyComponent(Plotly)
+import {connect} from 'react-redux';
+import Graph from './Graph';
 
-export default () => {
-    return (
-        <Plot 
-        />
-    );
+const mapStateToProps = state => {
+    return {
+        channelData: state.channelsData.toJS()
+    }
 }
+
+const mapDispatchToProps = dispatch => {
+    return {};
+}
+
+
+const GraphsContainer = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Graph)
+
+export default GraphsContainer
