@@ -1,10 +1,9 @@
-import React from 'react';
 import {connect} from 'react-redux';
 import Graph from './Graph';
 
 const mapStateToProps = state => {
     return {
-        channelData: state.channelsData.toJS()
+        channelData: state.biostream.channelsData.toJS()
     }
 }
 

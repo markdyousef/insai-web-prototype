@@ -19,9 +19,6 @@ const View = styled.div`
 `;
 
 export default class extends Component {
-    constructor() {
-        super();
-    }
     render() {
         return (
             <Container>
