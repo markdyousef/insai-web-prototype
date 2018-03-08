@@ -1,5 +1,5 @@
 import {socket} from '../config';
-import {addChannelData} from './index';
+import {addChannelData} from './biostream';
 
 // Board Connection
 export const connect = () => ({

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
 import IconButton from 'material-ui/IconButton/IconButton';
 import PlayIcon from 'material-ui/svg-icons/av/play-arrow';
 import PauseIcon from 'material-ui/svg-icons/av/pause'
@@ -12,20 +12,21 @@ const Container = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
 `;
 
 class Controls extends Component {
     render() {
         return (
-            <Paper zDepth={2} style={{margin: 5}}>
+            <Paper zDepth={1} style={{margin: 5}}>
                 <Container>
                     {(this.props.connected) ?
-                        <RaisedButton
+                        <FlatButton
                             label="Disconnect"
                             onClick={this.props.onDisconnect}
                         />
                         :
-                        <RaisedButton
+                        <FlatButton
                             label="Connect"
                             primary
                             onClick={this.props.onConnect}

@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
 import configJson from './board-config.json';
 import Headset from './Headset';
+import ChannelDialog from './ChannelDialog';
 
 const Container = styled.section`
     display: flex;
@@ -11,31 +13,32 @@ const Container = styled.section`
     padding: 20px;
 `;
 
-
-export default class extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-        }
-    }
-    renderHandset = () => {
-
-    }
-    renderConfig = () => {
-        const config = configJson;
-        const {handset, headset} = config;
-        return (
-            <div>
-                <Headset headset={headset} />
-                {this.renderHandset(handset)}
-            </div>
-        );
-    }
+class BrainConfig extends Component {
     render() {
         return(
             <Container>
-                {this.renderConfig()}
+                <div>
+                    <Headset headset={this.props.headset}/>
+                </div>
+                <ChannelDialog
+                    open={true}
+                    handleClose={() => this.setState({showDialog: false})}
+                    channelConfig={this.props.channel}
+                />
             </Container>
         );
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        ...state,
+        ...configJson
+    };
+}
+
+const mapDispatchToProps = dispatch => {
+    return {}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BrainConfig);

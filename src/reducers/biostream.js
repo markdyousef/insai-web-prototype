@@ -1,7 +1,5 @@
-import {List} from 'immutable';
-
 const initialState = {
-    channelsData: List([])
+    channelsData: []
 };
 
 const biostream = (state=initialState, action) => {
@@ -10,7 +8,8 @@ const biostream = (state=initialState, action) => {
         const {channels, timestamp} = action;
         return {
             ...state,
-            channelsData: state.channelsData.push({channels, timestamp})
+            // last 100
+            channelsData: state.channelsData.concat([{channels, timestamp}]).slice(-100)
         }
         default:
         return state

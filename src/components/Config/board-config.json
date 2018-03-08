@@ -30,21 +30,24 @@
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "Fz",
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "F4",
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "F8",
@@ -81,7 +84,8 @@
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "C4",
@@ -111,35 +115,40 @@
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "P3",
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "Pz",
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "P4",
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 },
                 {
                     "areaName": "T6",
                     "cableColor": "",
                     "channelColor": "",
                     "channelNumber": -1,
-                    "channelName": ""
+                    "channelName": "",
+                    "powerDown": true
                 }
             ],
             [
@@ -168,7 +177,8 @@
                 "channelColor": "YELLOW",
                 "channelNumber": 5,
                 "channelName": "DAISY_N5P",
-                "dataType": "EMG"
+                "dataType": "EMG",
+                "bias": false
             },
             {
                 "areaName": "FINGERS_RIGHT",
@@ -176,7 +186,8 @@
                 "channelColor": "ORANGE",
                 "channelNumber": 6,
                 "channelName": "DAISY_N6P",
-                "dataType": "EMG"
+                "dataType": "EMG",
+                "bias": false
             },
             {
                 "areaName": "PULSE_WRIST_RIGHT",
@@ -184,7 +195,8 @@
                 "channelColor": "",
                 "channelNumber": -1,
                 "channelName": "",
-                "dataType": "ECG"
+                "dataType": "ECG",
+                "bias": false
             }
         ],
         "upper": [
@@ -194,7 +206,8 @@
                 "channelColor": "BLUE",
                 "channelNumber": 3,
                 "channelName": "DAISY_N3P",
-                "dataType": "EMG"
+                "dataType": "EMG",
+                "bias": false
             },
             {
                 "areaName": "TRICEP",
