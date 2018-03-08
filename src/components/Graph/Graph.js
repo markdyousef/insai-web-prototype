@@ -12,7 +12,7 @@ const Container = styled.section`
 const Plot = createPlotlyComponent(Plotly)
 
 const Graph = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
        <Container>
             <Card>

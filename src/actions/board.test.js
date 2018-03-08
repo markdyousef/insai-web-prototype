@@ -33,22 +33,11 @@ test('connect board success', () => {
     expect(connected).toBe(true);
 })
 
-it('starts, pauses and then stops the board stream', () => {
+it('starts and then stops the board stream', () => {
     // start
     let state = board(initialState, action.startStream());
     expect(state.start).toBe(true)
-    // pause
-    state = board(state, action.pauseStream())
-    expect(state.pause).toBe(true)
     // stop
     state = board(state, action.stopStream())
     expect(state.start).toBe(false)
-})
-
-test('disconnects board', () => {
-    const connectedBoard = {
-        connected: true,
-    }
-    const newBoard = board(connectedBoard, action.disconnectBoard())
-    expect(newBoard.connected).not.toBe(true)
 })

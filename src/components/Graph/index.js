@@ -3,7 +3,7 @@ import Graph from './Graph';
 
 const mapStateToProps = state => {
     return {
-        channelData: state.biostream.channelsData.toJS()
+        // channelData: state.biostream.channelsData.toJS()
     }
 }
 
