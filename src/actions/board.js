@@ -8,7 +8,7 @@ export const connect = () => ({
 
 export const connectFailure = (message) => ({
     type: 'CONNECT_BOARD_FAILURE',
-    message: message
+    message
 });
 
 export const connectSuccess = () => ({
@@ -41,8 +41,6 @@ export const connectBoard = () => dispatch => {
 export const startBoardStream = () => dispatch => {
     socket.emit('START_BOARD_STREAM')
     dispatch(startStream())
-
-    socket.emit('START_BOARD_STREAM');
     socket.on('BOARD_STREAM_ERROR', err => console.log(err))
     socket.on('BOARD_STREAM_SUCCESS', () => {})
     socket.on('BOARD_STREAM_DATA', (res) => {

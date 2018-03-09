@@ -25,7 +25,13 @@ const mapDispatchToProps = dispatch => {
         setInput: (inputType) =>
             dispatch(actions.setInput(inputType)),
         showDialog: (show) =>
-            dispatch(actions.displayChannelDetail(show))
+            dispatch(actions.displayChannelDetail(show)),
+        changeArea: (areaName) =>
+            dispatch(actions.setAreaName(areaName)),
+        changeChannel: (channelNumber) =>
+            dispatch(actions.setChannelNumber(channelNumber)),
+        saveConfig: (channelConfig) =>
+            dispatch(actions.updateChannelConfig(channelConfig))
     }
 }
 

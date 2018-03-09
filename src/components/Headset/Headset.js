@@ -44,7 +44,6 @@ export const Headset = ({headset, handleClick}) => {
 }
 
 export default (props) => {
-    console.log(props)
     return(
         <Container>
             <div>
@@ -56,7 +55,7 @@ export default (props) => {
             <ChannelDialog
                 open={props.channel.displayDetail}
                 handleClose={() => props.showDialog(false)}
-                channelConfig={props.channel}
+                {...props}
             />
         </Container>
     );
