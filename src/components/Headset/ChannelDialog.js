@@ -24,7 +24,6 @@ const Row = styled.div`
 
 const GAINS = [1,2,4,6,8,12,24];
 const ChannelDialog = ({open, handleClose, channelConfig}) => {
-    console.log(channelConfig)
     return (
         <Dialog
             title="Channel Details"

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import Graph from '../Graph';
 import Controls from '../Controls';
-import Config from '../Config';
+import Headset from '../Headset';
 
 const Container = styled.section`
     display: flex;
@@ -24,8 +24,8 @@ export default class extends Component {
             <Container>
                 <Controls />
                 <View>
-                    <Graph />
-                    <Config />
+                    {/* <Graph /> */}
+                    <Headset />
                 </View>
             </Container>
         );

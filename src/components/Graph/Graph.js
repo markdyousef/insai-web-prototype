@@ -11,8 +11,7 @@ const Container = styled.section`
 
 const Plot = createPlotlyComponent(Plotly)
 
-const Graph = (props) => {
-    // console.log(props);
+const Graph = ({ channelData }) => {
     return (
        <Container>
             <Card>
@@ -23,22 +22,17 @@ const Graph = (props) => {
                 <Plot
                     data={[
                         {
-                            type: 'scatter',
-                            mode: 'lines+plots',
-                            x: [1,2,3],
-                            y: [2,6,3],
-                            marker: {color: 'red'}
+                            mode: 'lines',
+                            y: [2,6,3]
                         },
                         {
-                            type: 'bar',
-                            x: [1,2,3],
-                            y: [2,5,3]
+                            mode: 'lines',
+                            y: [2,3,4]
                         }
                     ]}
                     layout={{
                         width: '100%',
-                        height: 240,
-                        title: 'EEG'
+                        height: 240
                     }}
                 />
                 <CardTitle title="Cyton data" />
