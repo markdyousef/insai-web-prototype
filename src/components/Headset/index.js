@@ -30,8 +30,8 @@ const mapDispatchToProps = dispatch => {
             dispatch(actions.setAreaName(areaName)),
         changeChannel: (channelNumber) =>
             dispatch(actions.setChannelNumber(channelNumber)),
-        saveConfig: (channelConfig) =>
-            dispatch(actions.updateChannelConfig(channelConfig))
+        saveConfig: (channel) =>
+            dispatch(actions.updateChannelConfig(channel))
     }
 }
 

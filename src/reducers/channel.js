@@ -14,7 +14,8 @@ const initialState = {
     channelName: 'DAISY_N2P',
     dataType: 'EEG',
     displayDetail: false,
-    isLoading: false
+    isLoading: false,
+    errorMessage: null
 }
 
 const channel = (state=initialState, action) => {
@@ -49,6 +50,33 @@ const channel = (state=initialState, action) => {
         return {
             ...state,
             inputType: action.inputType
+        }
+        case 'SET_CHANNEL_AREA':
+        return {
+            ...state,
+            areaName: action.areaName
+        }
+        case 'SET_CHANNEL_NUMBER':
+        return {
+            ...state,
+            channelNumber: action.channelNumber
+        }
+        case 'UPDATE_CHANNEL':
+        return {
+            ...state,
+            isLoading: true
+        }
+        case 'UPDATE_CHANNEL_SUCCESS':
+        return {
+            ...state,
+            isLoading: false,
+            displayDetail: false
+        }
+        case 'UPDATE_CHANNEL_FAILURE':
+        return {
+            ...state,
+            isLoading: false,
+            errorMessage: action.message
         }
         default:
         return state; 

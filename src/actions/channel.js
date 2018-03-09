@@ -57,10 +57,23 @@ export const updateFailure = (message) => ({
 });
 
 // Async Actions
-export const updateChannelConfig = (channelConfig) => dispatch => {
+export const updateChannelConfig = (channel) => dispatch => {
+    const channelConfig = {
+        channelNumber: channel.channelNumber,
+        powerDown: channel.powerDown,
+        gain: channel.gain,
+        inputType: channel.inputType,
+        bias: channel.bias,
+        srb2: channel.srb2,
+        srb1: channel.srb1
+    }
     socket.emit('UPDATE_CHANNEL', channelConfig)
     dispatch(update())
 
-    socket.on('UPDATE_CHANNEL_ERROR', err => console.log(err))
-    socket.on('UPDATE_CHANNEL_SUCCESS', () => console.log('Now write to DB'))
+    socket.on('UPDATE_CHANNEL_ERROR', err => dispatch(updateFailure(err)))
+    socket.on('UPDATE_CHANNEL_SUCCESS', res => {
+        console.log(res);
+        // TODO: write update to storage
+        dispatch(updateSuccess())
+    })
 }

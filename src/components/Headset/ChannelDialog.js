@@ -96,7 +96,7 @@ const LoadingContainer = styled.div`
     justify-content: center;
     background: #fff;
     z-index:999;
-    opacity: 0.8
+    opacity: 0.8;
 `;
 const Loading = () => {
     return (
@@ -127,7 +127,7 @@ const ChannelDialog = (props) => {
                 <FlatButton
                     label="Save"
                     primary
-                    onClick={props.saveConfig}
+                    onClick={() => props.saveConfig(props.channel)}
                 />
             ]}
         >
